@@ -4,7 +4,7 @@
 
 var newArray;
 var arrey = [];
-numberToString("223352436");
+numberToString("000352436");
 function numberToString(a) {
   a = Math.round(a);
   console.log(a);
@@ -227,7 +227,9 @@ function numberToString(a) {
       break;
   }
 
-  result = "million " + result;
+  if (arrey.length > 6) {
+    result = "million " + result;
+  }
 
   switch (arrey[arrey.length - 7]) {
     case "1":
